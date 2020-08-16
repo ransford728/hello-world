@@ -1,0 +1,132 @@
+1.	Compose a program that writes the Hello, Worldmessage 10 times.
+2.	Suppose that a and b are booleans. Show that the expression (not (a and b) and (a or b)) or ((a and b) or  not (a or b)) evaluates to True.
+3.	Suppose that a and b are integers. Simplify the following expression: (not (a < b) and not (a > b))
+4.	Suppose that x and y are two floats that represent the Cartesian coordinates of a point (x, y) in the plane. Give an expression that evaluates to the distance of the point from the origin.
+5.	Compose a program that takes two integers a and bfrom the command line and writes a random integer between a and b.
+6.	Compose a program that writes the sum of two random integers between 1 and 6 (such as you might get when rolling dice).
+7.	Compose a program that takes a float t from the com‐mand line and writes the value of sin(2t) + sin(3t).
+8.	Compose a program that takes three floats x 0 , v 0 , and from the command line, evaluates x 0 + v 0 t − G t 2 / 2, and writes the result. (Note: G is the constant 9.80665. This value is the displacement in meters after t seconds when an object is thrown straight up from initial position x 0 at velocity v 0 meters per second.)
+
+
+
+
+ANSWER:
+
+
+""""(1)
+def print_n(h,t):
+    for i in range(t):
+        print(h)
+
+print_n("hello",10)
+print("done")
+"""
+
+
+
+"""(2)
+a = "True"
+b = "False"
+def is_true(a,b):
+    is_true("true","False")
+if is_true != (a and b) and (a or b):
+    print("True")
+else:
+    print("false")
+print("you are right")
+"""
+
+
+"""
+a = "True"
+b = "True"
+def is_true( a, b):
+    is_true("True","True")
+if is_true == (a and b):
+     print("false")
+else:
+    print("True")
+print("you are right")
+"""
+
+"""
+(3) a = 10
+b = 8
+if a < b:
+    print("True")
+else:
+    print("False")
+"""
+
+
+"""
+a = 10
+b = 8
+if a > b:
+    print("True")
+else:
+    print("False")
+"""
+
+"""(4)
+import math
+x = [3.5,1]
+y = [4,6]
+distance = math.sqrt( ((x[0] - y[0]) **2) + ( ( x[1] - y[1])**2))
+print(distance)
+"""
+
+
+"""(5)
+import random
+number = random.randint(0,10)
+print(number)
+"""
+
+
+"""(6)
+import random
+
+def randnums():
+    total = 0
+    for count in range(6):
+        number = random.randint(1,9)
+        total = total + number
+    print(total)
+randnums()
+"""
+
+
+"""(7)
+t = 3.8
+sin = 0
+value = 2 * t + 3 * t
+print(value)"""
+
+
+
+"""(8)
+t = 0.5
+vo = 2
+xo = 0.2
+G = 9.80665
+result = xo + vo * t - G * t * 2 / 2
+print(result)
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
